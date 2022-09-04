@@ -11,8 +11,8 @@ import org.springframework.web.context.request.WebRequest;
 public class Advisor {
 
     @ExceptionHandler(CustomError.class)
-    public ResponseEntity<CustomError> handleException(CustomError ex, WebRequest mm) {
-        CustomError out=new CustomError(ex.getError(),ex.getDescription());
-       return new ResponseEntity<CustomError>(out, HttpStatus.BAD_REQUEST);
+    public ResponseEntity<passError> handleException(CustomError ex, WebRequest mm) {
+        passError out=new passError(ex.getError(),ex.getDescription());
+       return new ResponseEntity<passError>(out, HttpStatus.BAD_REQUEST);
     }
 }

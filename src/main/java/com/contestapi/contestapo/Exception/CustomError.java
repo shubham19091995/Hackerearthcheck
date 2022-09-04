@@ -1,9 +1,7 @@
 package com.contestapi.contestapo.Exception;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 public class CustomError extends RuntimeException {
